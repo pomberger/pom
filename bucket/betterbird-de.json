@@ -1,0 +1,43 @@
+{
+    "version": "91.8.1-bb30",
+    "description": "A free email application that’s easy to set up and customize.",
+    "homepage": "https://www.betterbird.eu",
+    "license": "MPL-2.0",
+
+    "architecture": {
+        "64bit": {
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.8.1-bb30.de.win64.installer.exe#/dl.7z",
+            "hash": "sha256:7af34da327c0839b97d57f6be37d462525fca7feed93eaed5d50bd49048c2cff"
+        }
+    },
+    "extract_dir": "core",
+    "post_install": [
+        "betterbird -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "$Addition = \"$persist_dir\\addition\"",
+        "if (Test-Path $Addition) {",
+        "  info 'Copying additional items...'",
+        "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
+        "}"
+    ],
+    "bin": "betterbird.exe",
+    "shortcuts": [
+        ["betterbird.exe", "Betterbird"],
+        ["betterbird.exe", "Betterbird Profile Manager", "-P"]
+    ],
+    "persist": ["distribution", "profile"]
+}
+
+// "notes": [
+//     "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
+//     "  - Run 'Thunderbird Profile Manager', choose 'Scoop' then click 'Start Thunderbird'.",
+//     "  - Visit 'about:profiles' page in Thunderbird to check *DEFAULT* profile.",
+//     "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-thunderbird-profiles"
+// ],
+
+// {
+//     "version": "9.8.0-bb29",
+//     "hompage": "https://www.betterbird.eu",
+//     "license": "MPL-2.0",
+//     "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.8.0-bb29.de.win64.installer.exe",
+//     "installer":
+// }
