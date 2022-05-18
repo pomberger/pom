@@ -42,10 +42,10 @@
         "architecture": {
             "64bit": {
                 "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.de.win64.installer.exe",
-                "hash": {
-                    "url": "https://www.betterbird.eu/downloads/sha256.txt",
-                    "regex": "$sha256 *betterbird-$version.de.win64.installer.exe"
-                }
+                // "hash": {
+                //     "url": "https://www.betterbird.eu/downloads/sha256.txt",
+                //     "regex": "$sha256[\\x20\t]+.*betterbird-$version.de.win64.installer.exe"
+                // }
             }
         }
     }
