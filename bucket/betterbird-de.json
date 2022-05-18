@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.9.0-bb31.de.win64.installer.exe",
-            "hash": "d25691059b7c42c2c2342c3dd39be5e39edc44c685d3084f6d2acb7afae4f89c"
+            "hash": "161cdedfaed39dabf9daf8768e609fe6e1cf42d0b46d8bda57eb2aece1544f29"
         }
     },
     "extract_dir": "core",
@@ -42,10 +42,10 @@
         "architecture": {
             "64bit": {
                 "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.de.win64.installer.exe",
-                // "hash": {
-                //     "url": "https://www.betterbird.eu/downloads/sha256.txt",
-                //     "regex": "$sha256[\\x20\t]+.*betterbird-$version.de.win64.installer.exe"
-                // }
+                "hash": {
+                    "url": "https://www.betterbird.eu/downloads/sha256.txt",
+                    "regex": "$sha256 betterbird-$version.de.win64.installer.exe"
+                }
             }
         }
     }
