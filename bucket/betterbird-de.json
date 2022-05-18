@@ -1,13 +1,12 @@
 {
-    "version": "91.8.1-bb30",
+    "version": "91.9.0-bb31",
     "description": "A free email application that’s easy to set up and customize.",
     "homepage": "https://www.betterbird.eu",
     "license": "MPL-2.0",
-
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.8.1-bb30.de.win64.installer.exe#/dl.7z",
-            "hash": "sha256:7af34da327c0839b97d57f6be37d462525fca7feed93eaed5d50bd49048c2cff"
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.9.0-bb31.de.win64.installer.exe",
+            "hash": "d25691059b7c42c2c2342c3dd39be5e39edc44c685d3084f6d2acb7afae4f89c"
         }
     },
     "extract_dir": "core",
@@ -21,23 +20,33 @@
     ],
     "bin": "betterbird.exe",
     "shortcuts": [
-        ["betterbird.exe", "Betterbird"],
-        ["betterbird.exe", "Betterbird Profile Manager", "-P"]
+        [
+            "betterbird.exe",
+            "Betterbird"
+        ],
+        [
+            "betterbird.exe",
+            "Betterbird Profile Manager",
+            "-P"
+        ]
     ],
-    "persist": ["distribution", "profile"]
+    "persist": [
+        "distribution",
+        "profile"
+    ],
+    "checkver": {
+        "url": "https://www.betterbird.eu/downloads/index.php",
+        "regex": "betterbird-([\\d.]+-bb[\\d]+)-latest-build"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.de.win64.installer.exe",
+                "hash": {
+                    "url": "https://www.betterbird.eu/downloads/sha256.txt",
+                    "regex": "$sha256"
+                }
+            }
+        }
+    }
 }
-
-// "notes": [
-//     "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
-//     "  - Run 'Thunderbird Profile Manager', choose 'Scoop' then click 'Start Thunderbird'.",
-//     "  - Visit 'about:profiles' page in Thunderbird to check *DEFAULT* profile.",
-//     "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-thunderbird-profiles"
-// ],
-
-// {
-//     "version": "9.8.0-bb29",
-//     "hompage": "https://www.betterbird.eu",
-//     "license": "MPL-2.0",
-//     "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.8.0-bb29.de.win64.installer.exe",
-//     "installer":
-// }
