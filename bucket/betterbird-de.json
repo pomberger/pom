@@ -5,7 +5,7 @@
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.9.0-bb31.de.win64.installer.exe",
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-91.9.0-bb31.de.win64.installer.exe#/dl.7z",
             "hash": "161cdedfaed39dabf9daf8768e609fe6e1cf42d0b46d8bda57eb2aece1544f29"
         }
     },
@@ -41,7 +41,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.de.win64.installer.exe",
+                "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.de.win64.installer.exe#/dl.7z",
                 "hash": {
                     "url": "https://www.betterbird.eu/downloads/sha256.txt",
                     "regex": "$sha256 betterbird-$version.de.win64.installer.exe"
