@@ -1,12 +1,12 @@
 {
-    "version": "102.4.1-bb22",
+    "version": "102.5.1-bb25",
     "description": "A free email application that’s easy to set up and customize.",
     "homepage": "https://www.betterbird.eu",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-102.4.1-bb22.de.win64.installer.exe#/dl.7z",
-            "hash": "0f638131a203d7882ce1fb0e693594abef57957aa2a4caa9299259d9916c1468"
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-102.5.1-bb25.de.win64.installer.exe#/dl.7z",
+            "hash": "34a1eb9fdd9e48999a678f2947690d06cd187cf9bf29a78f644925677d31f6fa"
         }
     },
     "extract_dir": "core",
