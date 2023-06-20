@@ -19,11 +19,5 @@
         "    'Removal' = $true",
         "}",
         "Expand-MsiArchive @_args"
-    ],
-    "shortcuts": [
-        [
-            "Max-Msp",
-            "Max"
-        ]
     ]
 }
