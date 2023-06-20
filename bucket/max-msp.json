@@ -15,7 +15,7 @@
         "$_args = @{",
         "    'Path' = \"$dir\\$msi_filename\"",
         "    'DestinationPath' = \"$dir\"",
-        "    'ExtractDir' = 'Max-Msp",
+        "    'ExtractDir' = 'Max-Msp'",
         "    'Removal' = $true",
         "}",
         "Expand-MsiArchive @_args"
@@ -27,6 +27,3 @@
         ]
     ]
 }
-
-
-
